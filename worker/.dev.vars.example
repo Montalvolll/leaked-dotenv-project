@@ -1,0 +1,5 @@
+INVENTORY_API_KEY=replace-with-your-inventory-key
+DEMO_PASSWORD=replace-with-your-demo-password
+ADMIN_TOKEN=replace-with-a-different-random-value
+AUDIT_SALT=replace-with-another-random-value
+

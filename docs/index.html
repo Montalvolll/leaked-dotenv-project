@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101a27">
+    <meta name="description" content="Northstar Inventory demo sign in">
+    <title>Sign in · Northstar Inventory</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./config.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">N</span> NORTHSTAR <span>INVENTORY</span></div>
+        <div class="intro-copy">
+          <p class="eyebrow">INVENTORY PORTAL / 01</p>
+          <h1 id="intro-title">A clearer view of your stock.</h1>
+          <p>Sign in to the demo workspace to review your inventory snapshot.</p>
+        </div>
+        <div class="intro-footer"><span class="status-dot" aria-hidden="true"></span> Demo environment <span>© 2026 Northstar</span></div>
+      </section>
+
+      <section class="login-panel" aria-labelledby="login-title">
+        <div class="panel-inner">
+          <p class="eyebrow">WELCOME BACK</p>
+          <h2 id="login-title">Sign in</h2>
+          <p class="hint">Enter your demo account details to continue.</p>
+          <form id="login-form">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" autocomplete="username" required placeholder="you@example.com">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="Enter your password">
+            <button id="submit-button" type="submit">Sign in <span aria-hidden="true">↗</span></button>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+          <div id="signed-in" class="signed-in" hidden>
+            <div class="success-icon" aria-hidden="true">✓</div>
+            <h3>You're signed in.</h3>
+            <p>This is a sample workspace. No account data is stored here.</p>
+            <button id="sign-out" class="secondary-button" type="button">Back to sign in</button>
+          </div>
+          <p class="panel-footer">Northstar Inventory · Demo access</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

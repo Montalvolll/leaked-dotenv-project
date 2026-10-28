@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "northstar-inventory-demo-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "vars": {
+    "PUBLIC_ORIGIN": "https://montalvolll.github.io",
+    "DEMO_USER": "demo@northstar.test"
+  },
+  "secrets": {
+    "required": ["INVENTORY_API_KEY", "DEMO_PASSWORD", "ADMIN_TOKEN", "AUDIT_SALT"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "northstar-inventory-demo-events",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
